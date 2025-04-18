@@ -47,4 +47,13 @@ dict and set are not allowed --> therefore can use:
  -list,array 
  -tuples 
  -heapq
- 
+
+
+This implementation:
+
+- Models the road network using an adjacency list
+- Uses Dijkstra’s algorithm with a min-heap to find optimal paths from the starting point
+- Tracks both cost and time, prioritising cost and breaking ties on time
+- Simulates the friend’s station movement by minute, accounting for cyclic traversal
+- Evaluates all possible interception moments and chooses the best valid option
+- If interception is possible, reconstructs the full path using backtracking from parent   pointers
